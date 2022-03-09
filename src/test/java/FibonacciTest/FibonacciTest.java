@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class FibonacciTest {
 
@@ -78,6 +79,12 @@ public class FibonacciTest {
         int expectedResult = 21;
 
         assertEquals(expectedResult, fibonacci.compute(8));
+    }
+
+    @Test
+    public void shouldComputeOfANegativeNumberRaiseAnException() {
+
+        assertThrows(RuntimeException.class, () -> fibonacci.compute(-1)) ;
     }
 
 }
