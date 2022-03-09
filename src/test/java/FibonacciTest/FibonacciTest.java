@@ -24,4 +24,60 @@ public class FibonacciTest {
         assertEquals(expectedResult, fibonacci.compute(0));
     }
 
+    @Test
+    public void testNumber1() {
+        int expectedResult = 1;
+
+        assertEquals(expectedResult, fibonacci.compute(1));
+    }
+
+    @Test
+    public void testNumber2() {
+        int expectedResult = 1;
+
+        assertEquals(expectedResult, fibonacci.compute(2));
+    }
+
+    @Test
+    public void testNumber3() {
+        int expectedResult = 2;
+
+        assertEquals(expectedResult, fibonacci.compute(3));
+    }
+
+    @Test
+    public void testNumber4() {
+        int expectedResult = 3;
+
+        assertEquals(expectedResult, fibonacci.compute(4));
+    }
+
+    @Test
+    public void testNumber5() {
+        int expectedResult = 5;
+
+        assertEquals(expectedResult, fibonacci.compute(5));
+    }
+
+    @Test
+    public void testNumber6() {
+        int expectedResult = 8;
+
+        assertEquals(expectedResult, fibonacci.compute(6));
+    }
+
+    @Test
+    public void testNumber7() {
+        int expectedResult =13;
+
+        assertEquals(expectedResult, fibonacci.compute(7));
+    }
+
+    @Test
+    public void testNumber8() {
+        int expectedResult = 21;
+
+        assertEquals(expectedResult, fibonacci.compute(8));
+    }
+
 }
